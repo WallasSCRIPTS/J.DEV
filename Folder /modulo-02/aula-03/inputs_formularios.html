@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+    <form action="preencher-formulario" method="post" enctype="multipart/form-data">
+         <label>
+            Nome
+            <input type="text" name="nome" placeholder="Digite seu nome">
+        </label>
+        <br>
+        <label>
+            Senha
+            <input type="password" name="senha" placeholder="Digite sua senha">
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="genero" value="feminino">
+            Feminino
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="genero" value="masculino">
+            Masculino
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="genero" value="outro">
+            Outro
+        </label>
+        <br>    
+        <label>
+            Foto de perfil:
+            <input type="file" name="foto_perfil">
+        </label>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+/* Estilos para inputs_escolhas.html */
+:root {
+	--cor-principal: #6c5ce7;
+	--cor-destaque: #a29bfe;
+	--cor-texto: #2d3436;
+	--cor-fundo: #f5f6fa;
+	--cor-borda: #dfe3f0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	padding: 2rem 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Arial, sans-serif;
+	color: var(--cor-texto);
+	background: linear-gradient(135deg, #dfe6e9, var(--cor-fundo));
+}
+
+form {
+	width: min(100%,  thirtyrem);
+	padding: 2rem;
+	border: 1px solid rgba(255, 255, 255, .8);
+	border-radius: 1.25rem;
+	background: rgba(255, 255, 255, .92);
+	box-shadow: 0 1rem 2.5rem rgba(45, 52, 54, .15);
+}
+
+h1,
+h2,
+h3 {
+	margin-top: 0;
+	color: var(--cor-principal);
+}
+
+label {
+	display: block;
+	margin: 1rem 0 .4rem;
+	font-weight: 700;
+}
+
+input,
+select,
+textarea {
+	width: 100%;
+	padding: .75rem .9rem;
+	border: 2px solid var(--cor-borda);
+	border-radius: .65rem;
+	font: inherit;
+	color: var(--cor-texto);
+	background: #fff;
+	transition: border-color .2s, box-shadow .2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+	outline: none;
+	border-color: var(--cor-principal);
+	box-shadow: 0 0 0 .2rem rgba(108, 92, 231, .18);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	width: auto;
+	margin-right: .5rem;
+	accent-color: var(--cor-principal);
+}
+
+fieldset {
+	margin: 1.25rem 0;
+	padding: 1rem;
+	border: 2px solid var(--cor-borda);
+	border-radius: .75rem;
+}
+
+legend {
+	padding: 0 .4rem;
+	font-weight: 700;
+	color: var(--cor-principal);
+}
+
+fieldset label {
+	margin: .65rem 0;
+	font-weight: 400;
+}
+
+button,
+input[type="submit"] {
+	width: 100%;
+	margin-top: 1.25rem;
+	padding: .8rem 1rem;
+	border: 0;
+	border-radius: .65rem;
+	color: #fff;
+	font: inherit;
+	font-weight: 700;
+	background: var(--cor-principal);
+	cursor: pointer;
+	transition: background .2s, transform .2s;
+}
+
+button:hover,
+input[type="submit"]:hover {
+	background: #5849d6;
+	transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+	form {
+		padding: 1.25rem;
+	}
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolhas do formulário</title>
+    <link rel="stylesheet" href="escolhas.css">
+</head>
+
+<body>
+    <form action="preencher-formulario" method="post" enctype="multipart/form-data">
+        <label>
+            <input type="checkbox" name="aceite" value="sim">
+            Aceito os termos.
+        </label>
+
+        <label>
+            <input type="radio" name="genero" value="feminino">
+            Feminino
+        </label>
+
+        <label>
+            <input type="radio" name="genero" value="masculino">
+            Masculino
+        </label>
+
+        <label>
+            <input type="radio" name="genero" value="outro">
+            Outro
+        </label>
+
+        <label>
+            Foto de perfil:
+            <input type="file" name="foto_perfil">
+        </label>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
