@@ -61,11 +61,16 @@ body {
 .cartao a[href] {
     display: inline-block;
     margin-top: 25px;
+    font-size: 15px;
     text-decoration: none;
-    color: #2a3031;
-    font-weight: bold;
-    position: left;
+    color: white;
+    font-weight: italic;
     position: relative;
+    outline: 10px;
+    border: 2px solid black;
+    border-radius: 40px;
+    background-color: black;
+
 
 }
 
