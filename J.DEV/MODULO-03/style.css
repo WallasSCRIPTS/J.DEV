@@ -16,14 +16,11 @@ body {
     
 }
 
-
-
-
 .cartao ul li:hover {
     -webkit-box-reflect: below 8px linear-gradient(transparent, rgba(204, 100, 100, 0.3));
 }
 
-/* Aplica o reflexo aos interesses listados no index. */
+
 .cartao ul li {
     position: relative;
 }

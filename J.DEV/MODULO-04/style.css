@@ -1,0 +1,25 @@
+.section {
+    position: relative;
+}
+
+.secao {
+    position: relative;
+}
+
+.explicacao {
+    position: relative;
+}
+
+.palco {
+    position: relative;
+}
+
+
+.botao-topo {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border: 2px solid #000;
+    border-radius: 30px;
+}
+

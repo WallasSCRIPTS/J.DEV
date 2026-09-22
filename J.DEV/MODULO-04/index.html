@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Positions</title>
+</head>
+<body id="topo">
+
+    <section class="secao">
+      <h1>Guia de posições em CSS</h1>
+      <p>Use os botões abaixo para navegar pela página e testar diferentes ações.</p>
+      <nav aria-label="Navegação da página">
+        <a href="#sobre">Sobre</a>
+        <a href="#conceitos">Conceitos</a>
+        <a href="#exemplos">Exemplos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <h2 id="sobre">Sobre esta página</h2>
+      <p class="explicacao">
+        Fica <strong>colado na tela</strong> e não rola junto com a página.
+        Veja a navbar no topo e o botão "↑" no canto inferior direito.
+      </p>
+
+      <div class="palco">
+        <p>Role a página → a navbar e o botão continuam no lugar.</p>
+      </div>
+
+      <h2 id="conceitos">Conceitos principais</h2>
+      <article>
+        <h3>Position static</h3>
+        <p>É o posicionamento padrão dos elementos. Eles aparecem na ordem normal do documento.</p>
+        <button type="button">Botão estático</button>
+      </article>
+      <article>
+        <h3>Position relative</h3>
+        <p>Permite deslocar um elemento mantendo seu espaço original reservado na página.</p>
+        <button type="button">Saiba mais</button>
+      </article>
+      <article>
+        <h3>Position absolute</h3>
+        <p>Posiciona o elemento em relação ao ancestral mais próximo que tenha posicionamento definido.</p>
+        <button type="button">Ver exemplo</button>
+      </article>
+      <article>
+        <h3>Position fixed</h3>
+        <p>Prende o elemento à janela do navegador, mesmo quando a página é rolada.</p>
+        <button type="button">Testar fixo</button>
+      </article>
+
+      <h2 id="exemplos">Exemplos práticos</h2>
+      <ul>
+        <li>Menus de navegação permanecem acessíveis no topo.</li>
+        <li>Botões de ação podem acompanhar o usuário durante a leitura.</li>
+        <li>Elementos decorativos podem ser posicionados dentro de cartões.</li>
+        <li>O fluxo normal do conteúdo continua organizado e previsível.</li>
+      </ul>
+      <p><a href="#sobre">Voltar para o início do conteúdo</a></p>
+
+      <h2 id="contato">Área de interação</h2>
+      <p>Teste os controles abaixo. Eles servem para verificar estados, foco e navegação.</p>
+      <form action="#contato" method="get">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="voce@exemplo.com">
+        <button type="submit">Enviar formulário</button>
+        <button type="reset">Limpar campos</button>
+      </form>
+      <p><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/position" target="_blank" rel="noopener">Ler documentação sobre position</a></p>
+    </section>
+
+    <a href="#topo" class="botao-topo" aria-label="Voltar ao topo">↑</a>
+
+    
+</body>
+</html>
