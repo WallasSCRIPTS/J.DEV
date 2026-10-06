@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fbf9f6">
+    <meta name="description" content="Fale com a Doce de Tarde: conte sua ideia, tire dúvidas ou planeje uma encomenda especial.">
+    <title>Contato — Doce de Tarde</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="home.html" aria-label="Doce de Tarde, página inicial"><img class="brand-logo" src="assets/LogoB.jpeg" alt=""><span>doce de tarde</span></a>
+        <nav class="main-nav" aria-label="Navegação principal"><a href="home.html">Início</a><a href="home.html#catalogo">Cardápio</a><a href="sobre.html">Nossa história</a><a class="is-active" href="contato.html">Contato</a></nav>
+        <div class="header-actions"><button class="theme-toggle" type="button" data-theme-toggle aria-label="Ativar tema escuro" title="Alternar tema"><svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg><svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 15.4A8.5 8.5 0 0 1 8.6 3.6 8.5 8.5 0 1 0 20.4 15.4Z"/></svg></button><button class="bag-link" type="button" data-open-cart aria-label="Abrir sacola de compras" aria-expanded="false" aria-controls="cart-popover"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span class="cart-count" data-cart-count>0</span></button></div>
+        <section class="cart-popover" id="cart-popover" aria-label="Sua sacola" hidden><div class="cart-heading"><h2>Sua sacola <span class="cart-title-count" data-cart-count>0</span></h2><button class="cart-close" type="button" data-close-cart aria-label="Fechar sacola">×</button></div><div class="cart-items" id="cart-items"></div><div class="cart-summary" id="cart-summary"></div></section>
+    </header>
+    <main class="inner-page page-width">
+        <div class="breadcrumb"><a href="home.html">Início</a><span>/</span><span>Contato</span></div>
+        <section class="contact-intro">
+            <div><p class="eyebrow">A conversa também faz parte da receita</p><h1>Conta pra gente<br><em>o que você imaginou.</em></h1><p>Uma encomenda especial, uma dúvida ou uma ideia novinha para o nosso cardápio? Adoramos ouvir você.</p></div>
+            <div class="contact-stamp" aria-hidden="true"><span>feito</span><span>com</span><span>carinho</span><b>✳</b></div>
+        </section>
+        <section class="contact-layout" id="ideia">
+            <div class="contact-details">
+                <p class="eyebrow">Estamos por aqui</p>
+                <h2>Seu próximo doce favorito começa com um oi.</h2>
+                <div class="contact-detail"><span class="detail-icon" aria-hidden="true">↗</span><div><h3>Instagram</h3><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">@docedetarde</a><p>Acompanhe os bastidores e as fornadas do dia.</p></div></div>
+                <div class="contact-detail"><span class="detail-icon" aria-hidden="true">✳</span><div><h3>Atendimento</h3><p>De segunda a sábado<br>Das 9h às 18h</p></div></div>
+                <div class="contact-detail"><span class="detail-icon" aria-hidden="true">♡</span><div><h3>Feito sob encomenda</h3><p>Conte sua ocasião e a gente pensa junto no bolo.</p></div></div>
+                <div class="contact-photo"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=80" alt="Bancada de cozinha iluminada onde preparamos nossos doces" loading="lazy"></div>
+            </div>
+            <form class="contact-form" id="contact-form">
+                <p class="eyebrow">Escreva pra gente</p>
+                <h2>Temos um lugar à mesa<br>para a sua ideia.</h2>
+                <label for="nome">Seu nome</label><input id="nome" name="nome" type="text" placeholder="Como podemos te chamar?" autocomplete="name" required>
+                <label for="email">Seu e-mail</label><input id="email" name="email" type="email" placeholder="voce@email.com" autocomplete="email" required>
+                <label for="assunto">Sobre o que vamos conversar?</label>
+                <select id="assunto" name="assunto" required><option value="" disabled selected>Escolha um assunto</option><option>Ideia para um novo doce</option><option>Encomenda especial</option><option>Dúvida sobre um produto</option><option>Outro assunto</option></select>
+                <label for="mensagem">Sua mensagem</label><textarea id="mensagem" name="mensagem" rows="5" placeholder="Pode contar tudo, a gente adora ideias..." required></textarea>
+                <button class="button button-dark" type="submit">Enviar minha ideia <span aria-hidden="true">↗</span></button>
+                <p class="form-note">Ao enviar, seu aplicativo de e-mail será aberto com a mensagem pronta para você revisar e enviar.</p>
+                <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer page-width">
+        <div class="footer-top"><a class="brand" href="home.html"><img class="brand-logo" src="assets/LogoB.jpeg" alt=""><span>doce de tarde</span></a><p>Um carinho em forma de bolo.<br>Feito à mão em São Paulo.</p><div class="footer-links"><div><h3>Explore</h3><a href="sobre.html">Nossa história</a><a href="home.html#catalogo">Cardápio</a></div><div><h3>Precisou?</h3><a href="contato.html">Fale com a gente</a><a href="#ideia">Mande sua ideia</a></div></div><a class="instagram-link" href="https://www.instagram.com/docedetarde/" target="_blank" rel="noreferrer"><span aria-hidden="true">◎</span> Acompanhe no Instagram ↗</a></div>
+        <div class="footer-bottom"><span>© 2026 Doce de Tarde. Feito com carinho.</span><span>Feito à mão, com ingredientes de verdade.</span></div>
+    </footer>
+    <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fbf9f6">
+    <meta name="description" content="Bolos artesanais, feitos com carinho e ingredientes de verdade. Encontre seu próximo doce favorito na Doce de Tarde.">
+    <title>Doce de Tarde — confeitaria artesanal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="home-page">
+    <header class="site-header site-header--hero">
+        <a class="brand" href="home.html" aria-label="Doce de Tarde, página inicial">
+            <img class="brand-logo" src="assets/LogoB.jpeg" alt="">
+            <span>doce de tarde</span>
+        </a>
+        <nav class="main-nav" aria-label="Navegação principal">
+            <a class="is-active" href="home.html">Início</a>
+            <a href="#catalogo">Cardápio</a>
+            <a href="sobre.html">Nossa história</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+        <div class="header-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Ativar tema escuro" title="Alternar tema">
+            <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+            <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 15.4A8.5 8.5 0 0 1 8.6 3.6 8.5 8.5 0 1 0 20.4 15.4Z"/></svg>
+        </button>
+        <button class="bag-link" type="button" data-open-cart aria-label="Abrir sacola de compras" aria-expanded="false" aria-controls="cart-popover">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+            <span class="cart-count" data-cart-count>0</span>
+        </button>
+        </div>
+        <section class="cart-popover" id="cart-popover" aria-label="Sua sacola" hidden>
+            <div class="cart-heading"><h2>Sua sacola <span class="cart-title-count" data-cart-count>0</span></h2><button class="cart-close" type="button" data-close-cart aria-label="Fechar sacola">×</button></div>
+            <div class="cart-items" id="cart-items"></div>
+            <div class="cart-summary" id="cart-summary"></div>
+        </section>
+    </header>
+
+    <main>
+        <section class="hero" aria-label="Conheça a Doce de Tarde">
+            <img src="assets/bolo-chocolate-banner.jpeg" alt="Bolo de chocolate coberto com framboesas em um fundo escuro">
+            <div class="hero-shade"></div>
+            <h2 class="hero-word">DOCE DE TARDE</h2>
+            <div class="hero-content">
+                <h1>Um pedacinho de felicidade.</h1>
+                <a class="button button-light" href="#catalogo">Descobrir o cardápio <span aria-hidden="true">↗</span></a>
+            </div>
+            <span class="hero-note">Confeitaria artesanal · desde 2018</span>
+        </section>
+
+        <section class="shop-section page-width" id="catalogo">
+            <div class="catalog-heading">
+                <div>
+                    <p class="eyebrow">Uma pausa gostosa no seu dia</p>
+                    <h2>Feito para compartilhar<br class="mobile-break"> (ou não!)</h2>
+                </div>
+                <label class="search-box">
+                    <span class="sr-only">Buscar no cardápio</span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16 16 4 4"/></svg>
+                    <input type="search" id="product-search" placeholder="Buscar um docinho..." autocomplete="off">
+                    <kbd>⌕</kbd>
+                </label>
+            </div>
+
+            <div class="catalog-layout">
+                <aside class="filters" aria-label="Filtros do cardápio">
+                    <div class="filter-title"><h3>Cardápio</h3><span>☼</span></div>
+                    <div class="filter-group">
+                        <p class="filter-label">Categorias</p>
+                        <label class="filter-option"><input type="radio" name="category" value="todos" checked><span>Todos os doces</span><span class="filter-count">08</span></label>
+                        <label class="filter-option"><input type="radio" name="category" value="bolos"><span>Bolos inteiros</span></label>
+                        <label class="filter-option"><input type="radio" name="category" value="fatias"><span>Fatias &amp; minis</span></label>
+                        <label class="filter-option"><input type="radio" name="category" value="cookies"><span>Cookies</span></label>
+                        <label class="filter-option"><input type="radio" name="category" value="presentes"><span>Para presentear</span></label>
+                    </div>
+                    <div class="filter-group">
+                        <p class="filter-label">Escolha da casa</p>
+                        <label class="filter-option"><input type="checkbox" id="bestsellers"><span>Mais queridos</span><span aria-hidden="true">♡</span></label>
+                        <label class="filter-option"><input type="checkbox" id="vegan"><span>Opções veganas</span><span aria-hidden="true">✳</span></label>
+                    </div>
+                    <div class="delivery-note"><span aria-hidden="true">✿</span><p>Feito fresquinho<br>todos os dias.</p><a href="contato.html">Como funciona a entrega ↗</a></div>
+                </aside>
+
+                <div class="product-area">
+                    <div class="product-toolbar">
+                        <p><span id="product-total">8</span> delícias para descobrir</p>
+                        <label>Ordenar por
+                            <select id="product-sort" aria-label="Ordenar produtos">
+                                <option value="featured">Em destaque</option>
+                                <option value="price-low">Menor preço</option>
+                                <option value="price-high">Maior preço</option>
+                                <option value="name">Nome</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="product-grid" id="product-grid" aria-live="polite"></div>
+                    <p class="empty-state" id="empty-state" hidden>Nenhum docinho por aqui com esse filtro. Que tal tentar outro?</p>
+                    <div class="pagination-note"><span>Feito com carinho, em pequenos lotes.</span><a href="sobre.html">Conheça nossa cozinha ↗</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recommendations page-width">
+            <div class="section-heading">
+                <div><p class="eyebrow">A gente acha que você vai amar</p><h2>Os queridinhos da semana</h2></div>
+                <div class="carousel-controls"><button type="button" data-scroll="-1" aria-label="Ver anteriores">←</button><button type="button" data-scroll="1" aria-label="Ver próximos">→</button></div>
+            </div>
+            <div class="recommendation-track" id="recommendation-track"></div>
+        </section>
+
+        <section class="newsletter page-width">
+            <div><p class="eyebrow eyebrow-light">Cartas açucaradas, sem spam</p><h2>Uma dose extra<br>de coisa boa.</h2></div>
+            <div class="newsletter-copy">
+                <p>Novidades do forno, receitas de estação e um mimo de boas-vindas na primeira encomenda.</p>
+                <a class="button button-light" href="contato.html">Quero receber novidades <span aria-hidden="true">↗</span></a>
+            </div>
+            <span class="newsletter-flower" aria-hidden="true">✳</span>
+        </section>
+    </main>
+
+    <footer class="site-footer page-width">
+        <div class="footer-top">
+            <a class="brand" href="home.html"><img class="brand-logo" src="assets/LogoB.jpeg" alt=""><span>doce de tarde</span></a>
+            <p>Um carinho em forma de bolo.<br>Feito à mão em São Paulo.</p>
+            <div class="footer-links"><div><h3>Explore</h3><a href="sobre.html">Nossa história</a><a href="#catalogo">Cardápio</a></div><div><h3>Precisou?</h3><a href="contato.html">Fale com a gente</a><a href="contato.html#ideia">Mande sua ideia</a></div></div>
+            <a class="instagram-link" href="https://www.instagram.com/docedetarde/" target="_blank" rel="noreferrer"><span aria-hidden="true">◎</span> Acompanhe no Instagram ↗</a>
+        </div>
+        <div class="footer-bottom"><span>© 2026 Doce de Tarde. Feito com carinho.</span><span>Feito à mão, com ingredientes de verdade.</span></div>
+    </footer>
+    <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

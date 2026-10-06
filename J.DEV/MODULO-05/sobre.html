@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fbf9f6">
+    <meta name="description" content="Conheça a história, os ingredientes e o cuidado por trás de cada doce da Doce de Tarde.">
+    <title>Nossa história — Doce de Tarde</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="home.html" aria-label="Doce de Tarde, página inicial"><img class="brand-logo" src="assets/LogoB.jpeg" alt=""><span>doce de tarde</span></a>
+        <nav class="main-nav" aria-label="Navegação principal"><a href="home.html">Início</a><a href="home.html#catalogo">Cardápio</a><a class="is-active" href="sobre.html">Nossa história</a><a href="contato.html">Contato</a></nav>
+        <div class="header-actions"><button class="theme-toggle" type="button" data-theme-toggle aria-label="Ativar tema escuro" title="Alternar tema"><svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg><svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 15.4A8.5 8.5 0 0 1 8.6 3.6 8.5 8.5 0 1 0 20.4 15.4Z"/></svg></button><button class="bag-link" type="button" data-open-cart aria-label="Abrir sacola de compras" aria-expanded="false" aria-controls="cart-popover"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span class="cart-count" data-cart-count>0</span></button></div>
+        <section class="cart-popover" id="cart-popover" aria-label="Sua sacola" hidden><div class="cart-heading"><h2>Sua sacola <span class="cart-title-count" data-cart-count>0</span></h2><button class="cart-close" type="button" data-close-cart aria-label="Fechar sacola">×</button></div><div class="cart-items" id="cart-items"></div><div class="cart-summary" id="cart-summary"></div></section>
+    </header>
+    <main class="inner-page page-width">
+        <div class="breadcrumb"><a href="home.html">Início</a><span>/</span><span>Nossa história</span></div>
+        <section class="about-hero">
+            <div class="about-copy"><p class="eyebrow">Um forno, uma mesa e muito afeto</p><h1>Doce de Tarde:<br><em>feito para ser lembrado.</em></h1><p>Tem cheiros que fazem a gente voltar para casa. O de bolo recém-assado é um deles. Foi desse sentimento — e de uma cozinha pequena — que nasceu a nossa confeitaria.</p><a class="button button-dark" href="home.html#catalogo">Conheça o cardápio <span aria-hidden="true">↗</span></a></div>
+            <div class="about-image"><img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=1200&q=85" alt="Bolo artesanal decorado com flores em uma mesa de confeitaria" fetchpriority="high"><span>Pequenos momentos, grandes fatias.</span></div>
+        </section>
+        <section class="story-section">
+            <div class="story-number">01 <span>—</span> Nossa história</div>
+            <div class="story-text"><h2>Começou com uma receita<br>escrita à mão.</h2><p>Em 2018, a Clara começou a assar bolos para os encontros de domingo da família. A mesa sempre ficava cheia, alguém sempre pedia a receita e, sem perceber, aquelas tardes viraram encomendas, depois uma cozinha e, enfim, a Doce de Tarde.</p><p>Hoje seguimos com a mesma vontade: transformar ingredientes simples em momentos que merecem ser compartilhados. Cada receita passa pelas nossas mãos, e cada fornada sai quando está no ponto — nunca antes.</p></div>
+        </section>
+        <section class="values-grid">
+            <article><span aria-hidden="true">✳</span><h3>De verdade</h3><p>Ingredientes frescos, sazonais e escolhidos com cuidado. Sem atalhos, sem misturas prontas.</p></article>
+            <article><span aria-hidden="true">♡</span><h3>Feito à mão</h3><p>Produzimos em pequenos lotes, com tempo para acertar cada detalhe de cada receita.</p></article>
+            <article><span aria-hidden="true">☼</span><h3>Para todo mundo</h3><p>Temos opções veganas e adoramos criar sabores novos para caber em diferentes mesas.</p></article>
+        </section>
+        <section class="about-cta"><p class="eyebrow eyebrow-light">Agora a história continua com você</p><h2>Qual vai ser o seu<br>próximo pedaço?</h2><a class="button button-light" href="home.html#catalogo">Explorar os doces <span aria-hidden="true">↗</span></a></section>
+    </main>
+    <footer class="site-footer page-width">
+        <div class="footer-top"><a class="brand" href="home.html"><img class="brand-logo" src="assets/LogoB.jpeg" alt=""><span>doce de tarde</span></a><p>Um carinho em forma de bolo.<br>Feito à mão em São Paulo.</p><div class="footer-links"><div><h3>Explore</h3><a href="sobre.html">Nossa história</a><a href="home.html#catalogo">Cardápio</a></div><div><h3>Precisou?</h3><a href="contato.html">Fale com a gente</a><a href="contato.html#ideia">Mande sua ideia</a></div></div><a class="instagram-link" href="https://www.instagram.com/docedetarde/" target="_blank" rel="noreferrer"><span aria-hidden="true">◎</span> Acompanhe no Instagram ↗</a></div>
+        <div class="footer-bottom"><span>© 2026 Doce de Tarde. Feito com carinho.</span><span>Feito à mão, com ingredientes de verdade.</span></div>
+    </footer>
+    <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
