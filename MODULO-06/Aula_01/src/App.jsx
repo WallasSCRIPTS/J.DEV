@@ -1,9 +1,13 @@
+import "./App.css";
+import Botao from "./Botao.jsx";
+
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <h1>My first App!</h1>
       <p>Made with React and Vite</p>
-    </div>
+      <Botao />
+    </main>
   );
 }
 
